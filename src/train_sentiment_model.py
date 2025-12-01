@@ -97,6 +97,8 @@ def create_train_val_split(
         stratify=labels, # se asegura de que ambos subconjuntos tengan un
                          # porcentaje equilibrado de reseñas positivas y negativas
     )
+
+    print(f"Creating train and validation subsets...")
     print(f"Train subset size: {len(X_train)}")
     print(f"Validation size  : {len(X_val)}")
     print()

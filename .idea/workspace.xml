@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3b5c0dd8-8f81-45b4-9747-06eedcc60384" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation_outline.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/imdb_sentiment_logreg.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/imdb_sentiment_logreg.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/train_sentiment_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_sentiment_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

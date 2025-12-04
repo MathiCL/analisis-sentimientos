@@ -1,63 +1,48 @@
-# Sentiment Analysis IMDB (TF-IDF + Logistic Regression)
+# IMDB Sentiment Analysis (TF-IDF + Logistic Regression)
 
-Este proyecto entrena un modelo de Machine Learning para clasificar reseñas de películas del dataset **IMDB** en dos categorías: **positivo** y **negativo**, utilizando técnicas de NLP como TF-IDF y un clasificador Logistic Regression.
+This project implements a Machine Learning model to classify IMDB movie reviews as **positive** or **negative**, utilizing **TF-IDF** for text vectorization and **Logistic Regression** for classification.
 
----
+## 📌 Features
 
-## 📌 Funcionalidad
-- Carga automática del dataset IMDB desde `datasets`.
-- Limpieza y vectorización del texto utilizando **TF-IDF**.
-- Entrenamiento de un modelo **Logistic Regression**.
-- Evaluación con métricas: Accuracy, Precision, Recall, F1-score.
-- Matrices de confusión generadas automáticamente.
-- GridSearchCV para mejorar el modelo.
-- Guardado del modelo final en `/models`.
+*   Automatic loading and processing of the IMDB dataset.
+*   Text vectorization using TF-IDF.
+*   Training and optimization of a Logistic Regression classifier with GridSearchCV.
+*   Comprehensive model evaluation (Accuracy, Precision, Recall, F1-score) and confusion matrix generation.
+*   Saving of the trained model and evaluation reports.
 
----
+## 📂 Project Structure
 
-## 📂 Estructura del proyecto
-
+```
 analisis-sentimientos/
-│
 ├── src/
-│ └── train_sentiment_model.py
-├── models/
-├── reports/
-├── requirements.txt
+│   └── train_sentiment_model.py    # Main script for training
+├── models/                         # Trained models are saved here
+├── reports/                        # Evaluation reports and confusion matrices
+├── requirements.txt                # Project dependencies
 └── README.md
+```
 
----
+## ▶️ How to Run
 
-## ▶️ Cómo ejecutar
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/analisis-sentimientos.git
+    cd analisis-sentimientos
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Train the model:**
+    ```bash
+    python src/train_sentiment_model.py
+    ```
 
-1. **Clonar el repositorio**
-```bash
-git clone https://github.com/TU_USUARIO/analisis-sentimientos.git
-cd analisis-sentimientos
+## 📦 Key Dependencies
 
-2. Crear entorno virtual (opcional)
+`datasets`, `scikit-learn`, `matplotlib`, `joblib`
 
-python -m venv venv
-venv\Scripts\activate
+## 👥 Authors
 
-3. Instalar dependencias
-
-pip install -r requirements.txt
-
-4. Ejecutar el script
-
-python src/train_sentiment_model.py
-
-📦 Dependencias principales:
-
-datasets
-scikit-learn
-matplotlib
-joblib
-
-👥 Autores
-
--Matías Valenzuela
-
--Catalina Herrera 
-
+- Matías Valenzuela
+- Catalina Herrera

@@ -1,4 +1,5 @@
 datasets
+numpy
 scikit-learn
 matplotlib
 joblib

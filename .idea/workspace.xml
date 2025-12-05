@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b5c0dd8-8f81-45b4-9747-06eedcc60384" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Sentiment Analysis of IMDB Movie Reviews.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/imdb_sentiment_logreg.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/imdb_sentiment_logreg.joblib" afterDir="false" />
     </list>
@@ -43,11 +44,17 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;cacata&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/catah/PycharmProjects/analisis-sentimientos&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\catah\PycharmProjects\analisis-sentimientos" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

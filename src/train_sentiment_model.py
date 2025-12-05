@@ -21,7 +21,7 @@ from datasets import load_dataset
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
+from logistic_regression import LogisticRegression
 
 from sklearn.metrics import (
     accuracy_score,
@@ -116,10 +116,7 @@ def build_pipeline() -> Pipeline:
         stop_words="english",
     )
 
-    lr = LogisticRegression( # CEREBRO del modelo, el clasificador
-        max_iter=200,
-        n_jobs=-1,
-    )
+    lr = LogisticRegression() # CEREBRO del modelo, el clasificador
 
     pipe = Pipeline(
         steps=[
@@ -219,7 +216,8 @@ def run_grid_search(pipe: Pipeline, X_train, y_train) -> GridSearchCV:
     param_grid = { # es el diccionario con todas las "piezas" a probar
         "tfidf__max_features": [10000, 20000],
         "tfidf__ngram_range": [(1, 1), (1, 2)],
-        "lr__C": [0.5, 1.0, 2.0],
+        "lr__learning_rate": [0.01, 0.1],
+        "lr__n_iterations": [1000, 2000],
     }
 
     grid = GridSearchCV( #3ejecuta GridSearchCV para que pruebe todas las

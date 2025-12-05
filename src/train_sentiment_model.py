@@ -35,6 +35,7 @@ from sklearn.metrics import (
 import matplotlib.pyplot as plt
 import numpy as np
 import joblib
+import warnings
 
 
 # ----------------------------- Config ----------------------------- #
@@ -278,6 +279,14 @@ def predict_custom_texts(model: Pipeline, texts: List[str]):
 
 def main():
     ensure_directories() # para crear las carpetas
+
+    # para suprimir la FutureWarning de scikit-learn,
+    # esto evita el spam de advertencias durante GridSearchCV y predict.
+    warnings.filterwarnings(
+        "ignore",
+        category=FutureWarning,
+        module="sklearn"
+    )
 
     # 1. Load dataset
     train_texts, train_labels, test_texts, test_labels = load_imdb_dataset()
